@@ -1,8 +1,9 @@
 % arara: pdflatex
 \documentclass{beamer}
 \usepackage[utf8]{inputenc}
+\usepackage{amsmath}
 
-\title{\texttt{vim}: ``Who needs a mouse?''}
+\title{\texttt{vim} \\ ``Who needs a mouse?''}
 \author{Nicolas Dorrmann}
 \date{04. Nov. 2020}
 
@@ -12,10 +13,21 @@
 \begin{frame}
     \frametitle{History}
     \begin{itemize}
-        \item Developed by Bram Molenaar in the 1980s.
-        \item Successor to \texttt{vi}, visual interface for line editor \texttt{ex}.
+        \item Developed by Bram Moolenaar, initially released in 1991.
+        \item Successor to \texttt{vi} (\textbf{v}isual \textbf{i}nterface for line editor \texttt{ex}).
     \end{itemize}
-
 \end{frame}
-
+\begin{frame}
+    \frametitle{Basics}
+    \begin{itemize}
+        \item Modes
+            \begin{description}
+                \item [\texttt{NORMAL}]  navigate within the file, issue text commands (yank/change/delete)
+                \item [\texttt{COMMAND}] open, close, or save a file
+                \item [\texttt{INSERT}]  direct input (i.\ e.\ actually typing text)
+                \item [\texttt{VISUAL}]  text highlighting, text blocking
+            \end{description}
+    \end{itemize}
+\end{frame}
 \end{document}
+
