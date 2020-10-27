@@ -2,6 +2,6 @@
 *.aux
 *.nav
 *.out
-*.pdf
+pres.pdf
 *.snm
 *.toc
