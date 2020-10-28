@@ -44,7 +44,7 @@
                 \item [\textbf{c}hange] replace object with a new object
                 \item [\textbf{d}elete] remove an object
             \end{description}
-        \item Modifiers (``adverbs'')
+        \item Modifiers
             \begin{description}
                 \item [\texttt{NUM}] number of objects to perform action on
                 \item [\texttt{i}]   perform action \textbf{i}nside an object
@@ -62,9 +62,15 @@
 \end{frame}
 \begin{frame}
     \frametitle{Commands}
-    \begin{enumerate}
-        \item This is a sentence.
-    \end{enumerate}
+    \begin{itemize}
+        \item Command has the form \texttt{Action} --- \texttt{Modifier} --- \texttt{Object}
+        \item Examples
+        \begin{enumerate}
+            \item \texttt{y2w} --- copy the next two words
+            \item \texttt{dis} --- delete the current sentence (i.\ e.\ the sentence the cursor is in)
+            \item \texttt{cp}  --- change (i.\ e.\ delete and enter \texttt{INSERT} mode) the current paragraph
+        \end{enumerate}
+    \end{itemize}
 \end{frame}
 
 \end{document}
