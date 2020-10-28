@@ -7,6 +7,7 @@
 \date{04. Nov. 2020}
 
 \begin{document}
+
 \frame{\titlepage}
 
 \begin{frame}
@@ -31,19 +32,40 @@
     \end{itemize}
     \vspace{0.5cm}
     \begin{center}
-        \includegraphics[width=0.6\textwidth]{vim_modes.pdf}
+        \includegraphics[width=0.6\textwidth]{graphics/vim_modes.pdf}
     \end{center}
 \end{frame}
 \begin{frame}
     \frametitle{Basics}
     \begin{itemize}
-        \item Text Objects
+        \item Actions (``verbs'')
             \begin{description}
-                \item [word]      string of non-whitespace characters surrounded by whitespace
-                \item [sentence]  ends with \texttt{!}, \texttt{?}, \texttt{.} followed by newline
-                \item [paragraph] consists of several sentences, delimited by empty lines
+                \item [\textbf{y}ank]   copy a movement
+                \item [\textbf{c}hange] replace object with a new object
+                \item [\textbf{d}elete] remove an object
+            \end{description}
+        \item Modifiers (``adverbs'')
+            \begin{description}
+                \item [\texttt{NUM}] number of objects to perform action on
+                \item [\texttt{i}]   perform action \textbf{i}nside an object
+                \item [\texttt{a}]   perform action \textbf{a}round an object
+                \item [\texttt{t}]   perform action up \textbf{t}o an object
+                \item [\texttt{f}]   perform action up to and including an object
+            \end{description}
+        \item Text Objects (``nouns'')
+            \begin{description}
+                \item [\textbf{w}ord]      string of non-whitespace characters surrounded by whitespace
+                \item [\textbf{s}entence]  ends with \texttt{!}, \texttt{?}, \texttt{.} followed by newline
+                \item [\textbf{p}aragraph] consists of several sentences, delimited by empty lines
             \end{description}
     \end{itemize}
 \end{frame}
+\begin{frame}
+    \frametitle{Commands}
+    \begin{enumerate}
+        \item This is a sentence.
+    \end{enumerate}
+\end{frame}
+
 \end{document}
 
