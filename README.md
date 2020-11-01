@@ -32,13 +32,11 @@ In order to follow along with the talk, please prepare the following:
 
 ### Installation
 
-|-----------------------|---------------------------------------------|
 | Distro                | Package manager command                     |
 |-----------------------|---------------------------------------------|
 | *Ubuntu/Debian Linux* | `sudo apt install neovim`                   |
 | *Arch Linux*          | `sudo pacman -S neovim`                     |
 | *Fedora Linux*        | `sudo dnf install -y neovim python3-neovim` |
-|-----------------------|---------------------------------------------|
 
 * create the folder `$HOME/.config/nvim`
 * inside the `nvim` folder, create a file called `init.vim`
