@@ -1,0 +1,86 @@
+snippet pac "package" b
+\usepackage{$0}
+endsnippet
+
+snippet "\\?b(egin)?" "begin{} / end{}" br
+\begin{${1:something}}
+	${0:${VISUAL}}
+\end{$1}
+endsnippet
+
+snippet ol "Enumerate" b
+\begin{enumerate}
+	\item $0
+\end{enumerate}
+endsnippet
+
+snippet ul "Itemize" b
+\begin{itemize}
+	\item $0
+\end{itemize}
+endsnippet
+
+snippet dl "Description" b
+\begin{description}
+	\item $0
+\end{description}
+endsnippet
+
+snippet it "Individual item" b
+\item $0
+endsnippet
+
+snippet dit "Description item" b
+\item [$1] $0
+endsnippet
+
+snippet cha "Chapter" b
+\chapter{${1:chapter name}}
+\label{cha:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
+
+$0
+endsnippet
+
+snippet sec "Section" b
+\section{${1:${VISUAL:section name}}}
+\label{sec:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
+
+${0}
+endsnippet
+
+snippet sub "Subsection" b
+\subsection{${1:${VISUAL:subsection name}}}%
+\label{sub:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
+
+$0
+endsnippet
+
+snippet ssub "Subsubsection" b
+\subsubsection{${1:${VISUAL:subsubsection name}}}%
+\label{ssub:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
+
+$0
+endsnippet
+
+snippet frame "Beamer Frame" b
+\begin{frame}
+	\frametitle{${1:something}}
+	$0
+\end{frame}
+endsnippet
+
+snippet bf
+\textbf{$0}
+endsnippet
+
+snippet itf
+\textit{$0}
+endsnippet
+
+snippet und
+\underline{$0}
+endsnippet
+
+snippet tt
+\texttt{$0}
+endsnippet
