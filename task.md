@@ -51,7 +51,7 @@ $ git submodule add https://github.com/sirver/ultisnips bundle/ultisnips
 * In your `init.vim`, after the `pathogen` call, add the following:
 
 ```vim
-let g:UltiSnipsSnippetDirectories['/path/to/mysnips']
+let g:UltiSnipsSnippetDirectories=['/path/to/mysnips']
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
